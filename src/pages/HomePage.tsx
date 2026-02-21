@@ -21,9 +21,18 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative overflow-hidden" aria-label="Hero">
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
-        <div className="container flex flex-col items-center text-center section-padding pt-20 pb-24">
+      <section className="relative overflow-hidden bg-gradient-to-br from-amber-50 via-white to-orange-50" aria-label="Hero">
+        {/* Logo watermark background */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
+          <img
+            src="/images/Logo.png"
+            alt=""
+            aria-hidden="true"
+            className="w-[520px] sm:w-[680px] lg:w-[820px] max-w-none opacity-[0.07] object-contain"
+          />
+        </div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_hsl(38_95%_48%_/_0.10),_transparent_60%)]" />
+        <div className="container relative flex flex-col items-center text-center section-padding pt-20 pb-24">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -57,7 +66,7 @@ export default function HomePage() {
       </section>
 
       {/* Features */}
-      <section className="border-y border-border bg-card/30" aria-label={t('home.whyUs')}>
+      <section className="border-y border-border bg-secondary/40" aria-label={t('home.whyUs')}>
         <div className="container py-10">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {features.map((f, i) => (
@@ -101,7 +110,7 @@ export default function HomePage() {
       </section>
 
       {/* All Products Preview */}
-      <section className="section-padding bg-card/30" aria-label={t('home.newArrivalsTitle')}>
+      <section className="section-padding bg-secondary/40" aria-label={t('home.newArrivalsTitle')}>
         <div className="container">
           <h2 className="text-2xl sm:text-3xl font-bold mb-8">{t('home.newArrivalsTitle')}</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">

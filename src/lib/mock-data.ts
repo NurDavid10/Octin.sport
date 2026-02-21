@@ -5,7 +5,7 @@ export const mockProducts: Product[] = [
   {
     id: '1',
     name: 'FC Barcelona Home Kit 2025/26 - Pedri #8',
-    nameAr: 'طقم برشلونة الأساسي 2025/26 - بيدري #8',
+    nameAr: 'القميص الأصلي لمانشستر يونايتد',
     description: 'Official FC Barcelona home kit with Pedri name and number.',
     descriptionAr: 'طقم برشلونة الأساسي الرسمي مع اسم ورقم بيدري.',
     club: 'FC Barcelona',
@@ -21,7 +21,7 @@ export const mockProducts: Product[] = [
     featured: true,
     createdAt: '2025-08-01',
     images: [
-      { id: 'img1', url: 'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=600&h=600&fit=crop', alt: 'Barcelona Home Kit', isPrimary: true },
+      { id: 'img1', url: '/images/7.PNG', alt: 'Barcelona Home Kit', isPrimary: true },
     ],
     variants: [
       { id: 'v1', productId: '1', size: 'S', stock: 10, price: 349 },
@@ -33,7 +33,7 @@ export const mockProducts: Product[] = [
   {
     id: '2',
     name: 'Real Madrid Home Shirt 2025/26 - Vinícius Jr. #7',
-    nameAr: 'قميص ريال مدريد الأساسي 2025/26 - فينيسيوس جونيور #7',
+    nameAr: 'القميص الأصلي لريال مدريد',
     description: 'Official Real Madrid home shirt with Vinícius Jr. name and number.',
     descriptionAr: 'قميص ريال مدريد الأساسي الرسمي مع اسم ورقم فينيسيوس.',
     club: 'Real Madrid',
@@ -49,7 +49,8 @@ export const mockProducts: Product[] = [
     featured: true,
     createdAt: '2025-08-10',
     images: [
-      { id: 'img2', url: 'https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=600&h=600&fit=crop', alt: 'Real Madrid Home Shirt', isPrimary: true },
+      { id: 'img2', url: '/images/4.PNG', alt: 'Real Madrid Home Shirt', isPrimary: true },
+      { id: 'img2b', url: '/images/2.2.png', alt: 'Real Madrid Home Shirt - View 2', isPrimary: false },
     ],
     variants: [
       { id: 'v5', productId: '2', size: 'S', stock: 12, price: 279 },
@@ -77,7 +78,7 @@ export const mockProducts: Product[] = [
     featured: true,
     createdAt: '2025-07-20',
     images: [
-      { id: 'img3', url: 'https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=600&h=600&fit=crop', alt: 'PSG Away Kit', isPrimary: true },
+      { id: 'img3', url: '/images/3.PNG', alt: 'PSG Away Kit', isPrimary: true },
     ],
     variants: [
       { id: 'v9', productId: '3', size: 'M', stock: 18, price: 369 },
@@ -104,7 +105,7 @@ export const mockProducts: Product[] = [
     featured: false,
     createdAt: '2025-09-01',
     images: [
-      { id: 'img4', url: 'https://images.unsplash.com/photo-1560272564-c83b66b1ad12?w=600&h=600&fit=crop', alt: 'Man City Home Shirt', isPrimary: true },
+      { id: 'img4', url: '/images/4.PNG', alt: 'Man City Home Shirt', isPrimary: true },
     ],
     variants: [
       { id: 'v12', productId: '4', size: 'S', stock: 5, price: 289 },
@@ -116,7 +117,7 @@ export const mockProducts: Product[] = [
   {
     id: '5',
     name: 'Liverpool Third Kit 2025/26 - Salah #11',
-    nameAr: 'الطقم الثالث ليفربول 2025/26 - صلاح #11',
+    nameAr: 'قميص اللاعب بيدري من برشلونة',
     description: 'Official Liverpool third kit with Salah name and number.',
     descriptionAr: 'الطقم الثالث الرسمي لليفربول مع اسم ورقم صلاح.',
     club: 'Liverpool',
@@ -132,7 +133,8 @@ export const mockProducts: Product[] = [
     featured: true,
     createdAt: '2025-08-15',
     images: [
-      { id: 'img5', url: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=600&h=600&fit=crop', alt: 'Liverpool Third Kit', isPrimary: true },
+      { id: 'img5', url: '/images/5.PNG', alt: 'Liverpool Third Kit', isPrimary: true },
+      { id: 'img5b', url: '/images/3.2.png', alt: 'Liverpool Third Kit - View 2', isPrimary: false },
     ],
     variants: [
       { id: 'v16', productId: '5', size: 'S', stock: 7, price: 359 },
@@ -161,7 +163,7 @@ export const mockProducts: Product[] = [
     featured: false,
     createdAt: '2025-09-05',
     images: [
-      { id: 'img6', url: 'https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=600&h=600&fit=crop', alt: 'Bayern Away Shirt', isPrimary: true },
+      { id: 'img6', url: '/images/1.PNG', alt: 'Bayern Away Shirt', isPrimary: true },
     ],
     variants: [
       { id: 'v21', productId: '6', size: 'M', stock: 9, price: 269 },

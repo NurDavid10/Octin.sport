@@ -18,6 +18,7 @@ export function ProductCard({ product }: ProductCardProps) {
   const name = isAr ? product.nameAr : product.name;
   const club = isAr ? product.clubAr : product.club;
   const primaryImage = product.images.find((i) => i.isPrimary) || product.images[0];
+  const secondaryImage = product.images.find((i) => !i.isPrimary);
   const minPrice = Math.min(...product.variants.map((v) => v.price));
   const inStock = product.variants.some((v) => v.stock > 0);
   const firstAvailable = product.variants.find((v) => v.stock > 0);
@@ -48,8 +49,20 @@ export function ProductCard({ product }: ProductCardProps) {
             src={primaryImage?.url}
             alt={primaryImage?.alt || name}
             loading="lazy"
-            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+            className={`h-full w-full object-cover transition-all duration-500 ${
+              secondaryImage
+                ? 'group-hover:opacity-0'
+                : 'group-hover:scale-110'
+            }`}
           />
+          {secondaryImage && (
+            <img
+              src={secondaryImage.url}
+              alt={secondaryImage.alt || name}
+              loading="lazy"
+              className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            />
+          )}
           {/* Badges */}
           <div className="absolute top-3 start-3 flex flex-col gap-1">
             {!inStock && (
