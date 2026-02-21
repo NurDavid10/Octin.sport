@@ -33,7 +33,7 @@ export const mockProducts: Product[] = [
   {
     id: '2',
     name: 'Real Madrid Home Shirt 2025/26 - Vinícius Jr. #7',
-    nameAr: 'القميص الأصلي لريال مدريد',
+    nameAr: 'القميص الأصلي للاعب مبابي من ريال مدريد',
     description: 'Official Real Madrid home shirt with Vinícius Jr. name and number.',
     descriptionAr: 'قميص ريال مدريد الأساسي الرسمي مع اسم ورقم فينيسيوس.',
     club: 'Real Madrid',
@@ -62,7 +62,7 @@ export const mockProducts: Product[] = [
   {
     id: '3',
     name: 'PSG Away Kit 2025/26 - Mbappé #7',
-    nameAr: 'طقم باريس سان جيرمان الاحتياطي 2025/26 - مبابي #7',
+    nameAr: 'القميص الأصلي لبايرن ميونخ',
     description: 'Official PSG away kit with Mbappé name and number.',
     descriptionAr: 'طقم باريس سان جيرمان الاحتياطي الرسمي مع اسم ورقم مبابي.',
     club: 'Paris Saint-Germain',
@@ -89,7 +89,7 @@ export const mockProducts: Product[] = [
   {
     id: '4',
     name: 'Manchester City Home Shirt 2025/26 - Haaland #9',
-    nameAr: 'قميص مانشستر سيتي الأساسي 2025/26 - هالاند #9',
+    nameAr: 'القميص الوردي الأصلي لنادي برشلونة',
     description: 'Official Manchester City home shirt with Haaland name and number.',
     descriptionAr: 'قميص مانشستر سيتي الأساسي الرسمي مع اسم ورقم هالاند.',
     club: 'Manchester City',
@@ -105,7 +105,7 @@ export const mockProducts: Product[] = [
     featured: false,
     createdAt: '2025-09-01',
     images: [
-      { id: 'img4', url: '/images/4.PNG', alt: 'Man City Home Shirt', isPrimary: true },
+      { id: 'img4', url: '/images/2.PNG', alt: 'Man City Home Shirt', isPrimary: true },
     ],
     variants: [
       { id: 'v12', productId: '4', size: 'S', stock: 5, price: 289 },
@@ -147,7 +147,7 @@ export const mockProducts: Product[] = [
   {
     id: '6',
     name: 'Bayern Munich Away Shirt 2025/26 - Musiala #42',
-    nameAr: 'قميص بايرن ميونخ الاحتياطي 2025/26 - موسيالا #42',
+    nameAr: 'القميص الأصلي لإنتر ميلان',
     description: 'Official Bayern Munich away shirt with Musiala name and number.',
     descriptionAr: 'قميص بايرن ميونخ الاحتياطي الرسمي مع اسم ورقم موسيالا.',
     club: 'Bayern Munich',
